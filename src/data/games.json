@@ -1,0 +1,95 @@
+{
+  "mostPopular": [
+    {
+      "id": 1,
+      "image": "/media/most-popular-1.jpg",
+      "alt": "Golden Legend Plus slot game Ultrapanda",
+      "hasDesign": true,
+      "designPosition": "top"
+    },
+    {
+      "id": 2,
+      "image": "/media/most-popular-2.jpg",
+      "alt": "Triple Supreme Xtreme slot Ultrapanda",
+      "hasDesign": false
+    },
+    {
+      "id": 3,
+      "image": "/media/most-popular-3.jpg",
+      "alt": "Hai Di Lao fish shooting game Ultrapanda",
+      "hasDesign": false
+    },
+    {
+      "id": 4,
+      "image": "/media/most-popular-4.jpg",
+      "alt": "Flying Squirrels arcade Ultrapanda",
+      "hasDesign": true,
+      "designPosition": "top"
+    }
+  ],
+  "recommended": [
+    {
+      "id": 1,
+      "title": "Eyes of Fortune",
+      "tags": "Action, Adventure",
+      "description": "Step into the jungle and take on the fiercest tiger for your chance to win treasure in this wild action-packed adventure.",
+      "image": "/media/game-reco-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Iceland",
+      "tags": "Adventure, Strategy",
+      "description": "Journey to a snowy wonderland filled with polar creatures, hidden bonuses, and icy challenges. Collect rewards in every spin!",
+      "image": "/media/game-reco-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Lucky Shamrock",
+      "tags": "Slot, Adventure",
+      "description": "Spin the reels with the lucky leprechaun and chase the rainbow to unlock pots of gold, free spins, and festive rewards!",
+      "image": "/media/game-reco-3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Easter",
+      "tags": "Adventure, Family",
+      "description": "Hop into a colorful Easter world filled with eggs, bunnies, and springtime surprises. Hunt for hidden treasures and collect seasonal rewards!",
+      "image": "/media/game-reco-4.jpg"
+    }
+  ],
+  "mostPlayed": [
+    {
+      "id": 1,
+      "image": "/media/most-played-1.png"
+    },
+    {
+      "id": 2,
+      "image": "/media/most-played-2.png"
+    },
+    {
+      "id": 3,
+      "image": "/media/most-played-3.png"
+    }
+  ],
+  "gameCounts": {
+    "all": 75,
+    "popular": 13,
+    "new": 4,
+    "comingSoon": 2
+  },
+  "services": [
+    {
+      "id": 1,
+      "image": "/media/sevices-1.png"
+    },
+    {
+      "id": 2,
+      "image": "/media/sevices-2.png"
+    },
+    {
+      "id": 3,
+      "image": "/media/sevices-3.png"
+    }
+  ]
+}
+

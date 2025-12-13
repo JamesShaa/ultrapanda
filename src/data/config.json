@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "Official Ultrapanda Website | Play Fish Arcade & Slots Online | 100% Bonus",
+    "description": "Looking for the official Ultrapanda site? Play fish arcade games and slots online with instant access. No agent required. Fast, secure, and 100% first-time bonus.",
+    "copyright": "http://play.ultrapanda.in all rights reseverd"
+  },
+  "links": {
+    "playNow": "https://www.ultrapanda.mobi/",
+    "signUp": "https://www.facebook.com/share/198BFWPaGN/?mibextid=wwXIfr",
+    "signIn": "https://www.ultrapanda.mobi/",
+    "facebook": "https://www.facebook.com/share/198BFWPaGN/?mibextid=wwXIfr"
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Games",
+      "path": "/games"
+    },
+    {
+      "label": "Blog",
+      "path": "/blog"
+    },
+    {
+      "label": "Contact us",
+      "path": "/contact-us"
+    }
+  ],
+  "hero": {
+    "desktopBanner": "/media/ultrapanda.webp",
+    "mobileBanner": "/media/bannerphone.webp",
+    "pandaOverlay": "/media/panda.png",
+    "offerText": "1ST TIME OFFER",
+    "bonusText": "100% Sign Up Bonus"
+  },
+  "seoIntro": "Welcome to <strong>Ultrapanda</strong> – Your ultimate destination for thrilling fish arcade games and exciting slot adventures. Experience the best gaming platform with instant access, secure transactions, and amazing bonuses."
+}
