@@ -5,7 +5,7 @@ import config from './data/config.json';
 
 export function initApp() {
   const app = document.getElementById('app');
-  
+
   app.innerHTML = `
     ${Header()}
     
@@ -31,9 +31,9 @@ export function initApp() {
       <div class="promo-banner absolute top-1/2 left-[8%] transform -translate-y-1/2 z-[999]">
         <h2 class="offer-text text-2xl font-bold mb-2">${config.hero.offerText}</h2>
         <h1 class="bonus-text text-4xl font-bold mb-4">${config.hero.bonusText}</h1>
-        <div class="promo-buttons flex gap-4">
-          <a href="${config.links.playNow}" target="_blank" class="btn play px-6 py-3 bg-orange text-white rounded">Play Now</a>
-          <a href="${config.links.signUp}" target="_blank" class="btn join px-6 py-3 bg-orange-light text-white rounded">Join Now</a>
+        <div class="promo-buttons flex gap-6 mt-8">
+          <a href="${config.links.playNow}" target="_blank" class="modern-btn btn-play">Play Now</a>
+          <a href="${config.links.signUp}" target="_blank" class="modern-btn btn-join">Join Now</a>
         </div>
       </div>
     </section>
@@ -163,7 +163,7 @@ export function initApp() {
     
     ${Footer()}
   `;
-  
+
   // Initialize JavaScript functionality
   initMobileMenu();
   initGameLinks();
@@ -173,18 +173,18 @@ function initMobileMenu() {
   const mobileNav = document.querySelector('.mobile-nav');
   const menu = document.querySelector('.menu');
   const closeMenu = document.querySelector('.close-menu');
-  
+
   if (mobileNav && menu && closeMenu) {
     mobileNav.addEventListener('click', () => {
       menu.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
-    
+
     closeMenu.addEventListener('click', () => {
       menu.classList.remove('active');
       document.body.style.overflow = 'auto';
     });
-    
+
     document.addEventListener('click', (e) => {
       if (!menu.contains(e.target) && !mobileNav.contains(e.target)) {
         menu.classList.remove('active');
@@ -200,7 +200,7 @@ function initGameLinks() {
     link.href = config.links.signUp;
     link.setAttribute('target', '_blank');
   });
-  
+
   const recommendedLinks = document.querySelectorAll('.game-recomendation-box a');
   recommendedLinks.forEach(link => {
     if (link.textContent === 'Download') {
@@ -208,13 +208,13 @@ function initGameLinks() {
       link.setAttribute('target', '_blank');
     }
   });
-  
+
   const mostPlayed = document.querySelectorAll('.most-played-games a');
   mostPlayed.forEach(link => {
     link.href = config.links.playNow;
     link.setAttribute('target', '_blank');
   });
-  
+
   const getStarted = document.querySelectorAll('.exp-main a');
   getStarted.forEach(link => {
     if (link.textContent.includes('Get Started')) {
