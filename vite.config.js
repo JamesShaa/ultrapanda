@@ -3,6 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: '.',
+  base: '/ultrapanda/',
   publicDir: './public',
   build: {
     outDir: './dist',
