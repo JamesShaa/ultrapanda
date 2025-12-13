@@ -52,7 +52,7 @@ export function initApp() {
             <div class="most-popularbox relative">
               ${game.hasDesign ? `
                 <div class="most-popular-design absolute ${game.designPosition === 'top' ? 'top-0' : 'bottom-0'}">
-                  <img src="/media/cube-design.png" alt="">
+                  <img src="/ultrapanda/media/cube-design.png" alt="">
                 </div>
               ` : ''}
               <a href="${config.links.signUp}" target="_blank">
@@ -68,7 +68,7 @@ export function initApp() {
     <section class="dive-into-main py-12">
       <div class="dive-into-container g-container g-flex flex-wrap items-center gap-8">
         <div class="dive-into-img flex-1 min-w-[300px]">
-          <img src="/media/home-dive.png" alt="">
+          <img src="/ultrapanda/media/home-dive.png" alt="">
         </div>
         <div class="dive-into-content flex-1 min-w-[300px]">
           <h2 class="text-3xl font-bold mb-4">Dive into the Thrilling <span class="text-[#ff7f22]">Underwater Adventure!</span></h2>
@@ -112,10 +112,10 @@ export function initApp() {
     <section class="most-played-games-main py-12 relative">
       <div class="most-played-games-container g-container">
         <div class="most-played-design1 absolute">
-          <img src="/media/most-played-design1.svg" alt="">
+          <img src="/ultrapanda/media/most-played-design1.svg" alt="">
         </div>
         <div class="most-played-design2 absolute">
-          <img src="/media/most-played-design2.svg" alt="">
+          <img src="/ultrapanda/media/most-played-design2.svg" alt="">
         </div>
         <h3 class="text-3xl font-bold text-center mb-4">Most Played Games <br>Of The Year</h3>
         <p class="text-center mb-8 max-w-2xl mx-auto">We have data on the most played games this year and as a result, games about battles and wars are very popular with gamers at this time, so we recommend this game into your cart to be used as your game.</p>

@@ -31,7 +31,7 @@ export function ContactUs() {
     
     <section class="contact-hero relative">
       <div class="contact-hero-container">
-        <img src="/media/contact-hero.jpg" alt="Contact Hero" class="w-full">
+        <img src="/ultrapanda/media/contact-hero.jpg" alt="Contact Hero" class="w-full">
         <div class="contact-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 max-w-3xl">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">CONTACT US</h1>
           <p>Have a question, issue, or feedback? We're here to help! Reach out to the Ultrapanda support team any time and we'll get back to you as quickly as possible. Whether it's about games, your account, or technical support — we're just a message away.</p>
@@ -120,7 +120,7 @@ export function ContactUs() {
           <div class="services-wrapper g-flex flex-wrap justify-center gap-6">
             ${[1, 2, 3].map(i => `
               <div class="service-box">
-                <img src="/media/sevices-${i}.png" alt="Service ${i}">
+                <img src="/ultrapanda/media/sevices-${i}.png" alt="Service ${i}">
               </div>
             `).join('')}
           </div>
@@ -147,56 +147,56 @@ export function initContactUs() {
   // Desktop FAQ
   const faqQuestions = document.querySelectorAll('.faq-question');
   const faqAnswers = document.querySelectorAll('.faq-ans');
-  
+
   faqQuestions.forEach((question, index) => {
     question.addEventListener('click', () => {
       faqQuestions.forEach(q => q.classList.remove('active'));
       faqAnswers.forEach(a => a.classList.remove('active'));
-      
+
       question.classList.add('active');
       faqAnswers[index].classList.add('active');
     });
   });
-  
+
   // Mobile FAQ
   const mobileFaqItems = document.querySelectorAll('.mobile-faq-item');
-  
+
   mobileFaqItems.forEach((item, index) => {
     item.addEventListener('click', () => {
       const answer = item.nextElementSibling;
       const isActive = item.classList.contains('active');
-      
+
       document.querySelectorAll('.mobile-faq-item').forEach(i => i.classList.remove('active'));
       document.querySelectorAll('.mobile-faq-ans').forEach(a => a.classList.remove('active'));
-      
+
       if (!isActive) {
         item.classList.add('active');
         answer.classList.add('active');
       }
     });
   });
-  
+
   // Contact Form
   const contactForm = document.getElementById('contactForm');
   const formMessage = document.getElementById('formMessage');
-  
+
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       const submitBtn = contactForm.querySelector('.submit-btn');
       const formData = new FormData(contactForm);
-      
+
       submitBtn.disabled = true;
       submitBtn.textContent = 'SENDING...';
       formMessage.classList.add('hidden');
-      
+
       // Since we don't have a backend, just show a success message
       setTimeout(() => {
         formMessage.classList.remove('hidden');
         formMessage.className = 'block mt-4 p-4 rounded bg-green-500 text-white';
         formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
-        
+
         contactForm.reset();
         submitBtn.disabled = false;
         submitBtn.textContent = 'SEND MESSAGE';

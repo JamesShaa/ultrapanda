@@ -9,7 +9,7 @@ export function Games() {
     
     <section class="games-hero relative">
       <div class="games-hero-container">
-        <img src="/media/games-hero.png" alt="Games Hero" class="w-full">
+        <img src="/ultrapanda/media/games-hero.png" alt="Games Hero" class="w-full">
         <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
           <div>
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Play Game Everytime Always Be Winner And Strong</h1>
@@ -24,22 +24,22 @@ export function Games() {
         <ul class="g-flex flex-wrap justify-center gap-4">
           <li class="games-filter-btn active cursor-pointer" data-filter="all">
             <b></b>
-            <span><img src="/media/all-game-icon.png" alt="All Games"></span>
+            <span><img src="/ultrapanda/media/all-game-icon.png" alt="All Games"></span>
             <strong>All Games</strong>
           </li>
           <li class="games-filter-btn cursor-pointer" data-filter="popular">
             <b></b>
-            <span><img src="/media/popular-game-icon.png" alt="Popular"></span>
+            <span><img src="/ultrapanda/media/popular-game-icon.png" alt="Popular"></span>
             <strong>Popular</strong>
           </li>
           <li class="games-filter-btn cursor-pointer" data-filter="new">
             <b></b>
-            <span><img src="/media/new-game-icon.png" alt="New"></span>
+            <span><img src="/ultrapanda/media/new-game-icon.png" alt="New"></span>
             <strong>New</strong>
           </li>
           <li class="games-filter-btn cursor-pointer" data-filter="coming-soon">
             <b></b>
-            <span><img src="/media/coming-game-icon.png" alt="Other Games"></span>
+            <span><img src="/ultrapanda/media/coming-game-icon.png" alt="Other Games"></span>
             <strong>Other Games</strong>
           </li>
         </ul>
@@ -55,7 +55,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.all }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/all/${i + 1}.jpg" alt="Game ${i + 1}" class="rounded-lg">
+                    <img src="/ultrapanda/media/games/all/${i + 1}.jpg" alt="Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -68,7 +68,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.popular }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/popular/${i + 1}.jpg" alt="Popular Game ${i + 1}" class="rounded-lg">
+                    <img src="/ultrapanda/media/games/popular/${i + 1}.jpg" alt="Popular Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -81,7 +81,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.new }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/new/${i + 1}.jpg" alt="New Game ${i + 1}" class="rounded-lg">
+                    <img src="/ultrapanda/media/games/new/${i + 1}.jpg" alt="New Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -94,7 +94,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.comingSoon }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/coming-soon/${i + 1}.jpg" alt="Coming Soon Game ${i + 1}" class="rounded-lg">
+                    <img src="/ultrapanda/media/games/coming-soon/${i + 1}.jpg" alt="Coming Soon Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -109,7 +109,7 @@ export function Games() {
       <div class="games-screenshots-container g-flex flex-wrap justify-center gap-4">
         ${[1, 2, 3, 4].map(i => `
           <div class="games-screenshot-box">
-            <img src="/media/screenshot-${i}.png" alt="Screenshot ${i}">
+            <img src="/ultrapanda/media/screenshot-${i}.png" alt="Screenshot ${i}">
           </div>
         `).join('')}
       </div>
@@ -151,12 +151,12 @@ export function Games() {
 export function initGames() {
   const filterBtns = document.querySelectorAll('.games-filter-btn');
   const filterBoxes = document.querySelectorAll('.games-filter-box');
-  
+
   filterBtns.forEach((btn, index) => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      
+
       filterBoxes.forEach(box => box.classList.remove('active'));
       filterBoxes[index].classList.add('active');
     });
