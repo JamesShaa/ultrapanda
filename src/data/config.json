@@ -7,25 +7,25 @@
   "links": {
     "playNow": "https://www.ultrapanda.mobi/",
     "signUp": "https://www.facebook.com/share/17sQBH88cM/?mibextid=wwXIfr",
-    "signIn": "https://www.ultrapanda.mobi/",
+    "signIn": "https://ht.ultrapanda.mobi/#/login?redirect=%2F",
     "facebook": "https://www.facebook.com/share/17sQBH88cM/?mibextid=wwXIfr"
   },
   "navigation": [
     {
       "label": "Home",
-      "path": "/"
+      "path": "/ultrapanda/"
     },
     {
       "label": "Games",
-      "path": "/games"
+      "path": "/ultrapanda/games"
     },
     {
       "label": "Blog",
-      "path": "/blog"
+      "path": "/ultrapanda/blog"
     },
     {
       "label": "Contact us",
-      "path": "/contact-us"
+      "path": "/ultrapanda/contact-us"
     }
   ],
   "hero": {
