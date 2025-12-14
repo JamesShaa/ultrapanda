@@ -4,24 +4,24 @@ import { Blog, initBlog } from './pages/Blog.js';
 import { ContactUs, initContactUs } from './pages/ContactUs.js';
 
 const routes = {
-  '/ultrapanda/': () => {
+  '/': () => {
     initApp();
   },
-  '/ultrapanda/games': () => {
+  '/games': () => {
     document.getElementById('app').innerHTML = Games();
     setTimeout(() => {
       initGames();
       initMobileMenu();
     }, 0);
   },
-  '/ultrapanda/blog': () => {
+  '/blog': () => {
     document.getElementById('app').innerHTML = Blog();
     setTimeout(() => {
       initBlog();
       initMobileMenu();
     }, 0);
   },
-  '/ultrapanda/contact-us': () => {
+  '/contact-us': () => {
     document.getElementById('app').innerHTML = ContactUs();
     setTimeout(() => {
       initContactUs();
@@ -57,25 +57,25 @@ function initMobileMenu() {
 
 function updateSEO(path) {
   const seoData = {
-    '/ultrapanda/': {
+    '/': {
       title: 'Ultrapanda Club 777 - Official Login & Download | Ultra Panda Mobi',
       description: 'Official Ultrapanda Club 777 Login & Download. Play the best fish arcade games and slots online. Get your Ultra Panda login password and app today! No agent required.'
     },
-    '/ultrapanda/games': {
+    '/games': {
       title: 'Ultrapanda Games - Fish Arcade, Slots & 777 | Play Online',
       description: 'Explore the best Ultrapanda games including Ocean King, fish shooters, and 777 slots. Play online or download the Ultra Panda club app for big wins!'
     },
-    '/ultrapanda/blog': {
+    '/blog': {
       title: 'Ultrapanda Blog - Tips, Tricks & Updates | Club 777 News',
       description: 'Stay updated with the latest Ultra Panda news, game tips, and winning strategies. Learn how to master UltraPanda club 777 games.'
     },
-    '/ultrapanda/contact-us': {
+    '/contact-us': {
       title: 'Contact Ultrapanda - Support & Login Help | Official Site',
       description: 'Need help with your UltraPanda login or download? Contact our official support team. We are here to help you with Ultrapanda club 777 access.'
     }
   };
 
-  const data = seoData[path] || seoData['/ultrapanda/'];
+  const data = seoData[path] || seoData['/'];
   document.title = data.title;
 
   const metaDescription = document.querySelector('meta[name="description"]');
@@ -112,7 +112,7 @@ export function initRouter() {
       if (routes[path]) {
         routes[path]();
       } else {
-        routes['/ultrapanda/']();
+        routes['/']();
       }
     }
   });
@@ -124,7 +124,7 @@ export function initRouter() {
     if (routes[path]) {
       routes[path]();
     } else {
-      routes['/ultrapanda/']();
+      routes['/']();
     }
   });
 }

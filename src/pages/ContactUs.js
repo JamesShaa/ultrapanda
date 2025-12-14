@@ -31,7 +31,7 @@ export function ContactUs() {
     
     <section class="contact-hero relative">
       <div class="contact-hero-container">
-        <img src="/ultrapanda/media/contact-hero.jpg" alt="Contact Hero" class="w-full">
+        <img src="/media/contact-hero.jpg" alt="Contact Hero" class="w-full">
         <div class="contact-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 max-w-3xl">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">CONTACT US</h1>
           <p>Have a question, issue, or feedback? We're here to help! Reach out to the Ultrapanda support team any time and we'll get back to you as quickly as possible. Whether it's about games, your account, or technical support — we're just a message away.</p>
@@ -120,7 +120,7 @@ export function ContactUs() {
           <div class="services-wrapper g-flex flex-wrap justify-center gap-6">
             ${[1, 2, 3].map(i => `
               <div class="service-box">
-                <img src="/ultrapanda/media/sevices-${i}.png" alt="Service ${i}">
+                <img src="/media/sevices-${i}.png" alt="Service ${i}">
               </div>
             `).join('')}
           </div>
@@ -204,5 +204,6 @@ export function initContactUs() {
     });
   }
 }
+
 
 

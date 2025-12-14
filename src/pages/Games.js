@@ -9,7 +9,7 @@ export function Games() {
     
     <section class="games-hero relative">
       <div class="games-hero-container">
-        <img src="/ultrapanda/media/games-hero.png" alt="Games Hero" class="w-full">
+        <img src="/media/games-hero.png" alt="Games Hero" class="w-full">
         <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
           <div>
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Play Game Everytime Always Be Winner And Strong</h1>
@@ -55,7 +55,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.all }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/ultrapanda/media/games/all/${i + 1}.jpg" alt="Game ${i + 1}" class="rounded-lg">
+                    <img src="/media/games/all/${i + 1}.jpg" alt="Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -68,7 +68,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.popular }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/ultrapanda/media/games/popular/${i + 1}.jpg" alt="Popular Game ${i + 1}" class="rounded-lg">
+                    <img src="/media/games/popular/${i + 1}.jpg" alt="Popular Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -81,7 +81,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.new }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/ultrapanda/media/games/new/${i + 1}.jpg" alt="New Game ${i + 1}" class="rounded-lg">
+                    <img src="/media/games/new/${i + 1}.jpg" alt="New Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -94,7 +94,7 @@ export function Games() {
               ${Array.from({ length: gamesData.gameCounts.comingSoon }, (_, i) => `
                 <div class="game-box">
                   <a href="${config.links.signUp}" target="_blank">
-                    <img src="/ultrapanda/media/games/coming-soon/${i + 1}.jpg" alt="Coming Soon Game ${i + 1}" class="rounded-lg">
+                    <img src="/media/games/coming-soon/${i + 1}.jpg" alt="Coming Soon Game ${i + 1}" class="rounded-lg">
                   </a>
                 </div>
               `).join('')}
@@ -109,7 +109,7 @@ export function Games() {
       <div class="games-screenshots-container g-flex flex-wrap justify-center gap-4">
         ${[1, 2, 3, 4].map(i => `
           <div class="games-screenshot-box">
-            <img src="/ultrapanda/media/screenshot-${i}.png" alt="Screenshot ${i}">
+            <img src="/media/screenshot-${i}.png" alt="Screenshot ${i}">
           </div>
         `).join('')}
       </div>
@@ -162,5 +162,6 @@ export function initGames() {
     });
   });
 }
+
 
 

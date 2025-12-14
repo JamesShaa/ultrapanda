@@ -13,25 +13,25 @@
   "navigation": [
     {
       "label": "Home",
-      "path": "/ultrapanda/"
+      "path": "/"
     },
     {
       "label": "Games",
-      "path": "/ultrapanda/games"
+      "path": "/games"
     },
     {
       "label": "Blog",
-      "path": "/ultrapanda/blog"
+      "path": "/blog"
     },
     {
       "label": "Contact us",
-      "path": "/ultrapanda/contact-us"
+      "path": "/contact-us"
     }
   ],
   "hero": {
-    "desktopBanner": "/ultrapanda/media/ultrapanda.webp",
-    "mobileBanner": "/ultrapanda/media/bannerphone.webp",
-    "pandaOverlay": "/ultrapanda/media/panda.png",
+    "desktopBanner": "/media/ultrapanda.webp",
+    "mobileBanner": "/media/bannerphone.webp",
+    "pandaOverlay": "/media/panda.png",
     "offerText": "1ST TIME OFFER",
     "bonusText": "100% Sign Up Bonus"
   },

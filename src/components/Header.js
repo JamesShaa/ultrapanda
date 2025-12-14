@@ -6,7 +6,7 @@ export function Header() {
       <div class="main-header-container g-container g-flex">
         <div class="logo">
           <a href="${config.links.facebook}" target="_blank">
-            <img src="/ultrapanda/media/logo.png" alt="Ultrapanda Facebook">
+            <img src="/media/logo.png" alt="Ultrapanda Facebook">
           </a>
           <div class="floating-element"></div>
         </div>

@@ -4,10 +4,11 @@ export function Footer() {
   return `
     <div class="messager">
       <a href="${config.links.facebook}" target="_blank">
-        <img src="/ultrapanda/media/messanger.svg" alt="">
+        <img src="/media/messanger.svg" alt="">
       </a>
     </div>
   `;
 }
+
 
 
